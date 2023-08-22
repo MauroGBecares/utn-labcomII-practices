@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<style>
+    table,
+    td,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    table {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Animales</th>
+                <th>Colores</th>
+                <th>Paisajes</th>
+                <th>Deportes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Perro</td>
+                <td>Azul</td>
+                <td>Playa</td>
+                <td>Fútbol</td>
+            </tr>
+            <tr>
+                <td>Gato</td>
+                <td>Rojo</td>
+                <td>Montañas</td>
+                <td>Basquet</td>
+            </tr>
+            <tr>
+                <td>Tiburon</td>
+                <td>Verde</td>
+                <td>Lagos</td>
+                <td>Tenis</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Pokemons</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Debilidad</th>
+                <th>Pokedex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0001</td>
+                <td>Bulbasaur</td>
+                <td>Planta</td>
+                <td>Fuego</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/bulbasaur">Ver</a></td>
+            </tr>
+            <tr>
+                <td>0004</td>
+                <td>Charmander</td>
+                <td rowspan="2">Fuego</td>
+                <td rowspan="2">Agua</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/charmander">Ver</a></td>
+            </tr>
+            <tr>
+                <td>0037</td>
+                <td>Vulpix</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/vulpix">Ver</a></td> 
+            </tr>
+            <tr>
+                <td colspan="2">Eelektross</td>
+                <td>Electrico</td>
+                <td>Tierra</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/eelektross">Ver</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

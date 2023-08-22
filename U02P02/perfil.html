@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <h1>Datos del Usuario</h1>
+    <form action="">
+        <div style="margin-bottom: 10px;">
+            <input type="text" name="estudiante" value="ESTUDIANTE" readonly>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="txtNombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="txtNombre">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="txtEmail">Email:</label>
+            <input type="email" id="txtEmail" name="email">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="txtEdad">Edad:</label>
+            <input type="number" id="txtEdad" name="edad">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="ddlNacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="ddlNacionalidad">
+                <option value="Argentina">Argentina</option>
+                <option value="Colombiano">Colombiano</option>
+                <option value="Brasilero">Brasilero</option>
+                <option value="Uruguayo">Uruguayo</option>
+                <option value="Chileno">Chileno</option>
+            </select>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="ddlCondicion">Condición Laboral:</label>
+            <select name="condicionLaboral" id="ddlCondicion">
+                <option value="desempleado">Desempleado</option>
+                <option value="enBusqueda">En búsqueda laboral</option>
+                <option value="partTime">Trabajo part-time</option>
+                <option value="fullTime">Trabajo full-time</option>
+            </select>
+        </div>
+        <h2>Gustos Personales</h2>
+        <div style="margin-bottom: 10px;">
+            <label for="txtMusicales">Gustos Musicales:</label>
+            <input type="text" name="gustosMusicales" id="txtMusicales">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="ddlComidas">Comidas Preferidas:</label>
+            <select name="comidas" id="ddlComidasPreferidas">
+                <option value="milanesa">Milanesa a la napolitana</option>
+                <option value="ensalada">Ensalada César</option>
+                <option value="pizza">Pizza de Cantimpalo</option>
+                <option value="pollo">Pollo al spiedo</option>
+            </select>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <input type="submit" name="Enviar" id="btnEnviar">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <input type="checkbox" name="recordar" id="chkRecordar">
+            <label for="chkRecordar">Recuerdame</label>
+        </div>
+    </form>
+</body>
+
+</html>
