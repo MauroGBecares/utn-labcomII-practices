@@ -1,0 +1,47 @@
+body {
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+.product-image{
+    background-color: rgba(255, 255, 255, 0.568);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.form-control{
+    padding: 10px;
+    background-color: beige;
+}
+.form-control *{
+    margin: 10px 0px 10px 0px;
+}
+form{
+    border: 2px solid;
+}
+.product-details-content{
+    background-color: chocolate;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(218, 141, 0);
+    border-radius: 10%;
+    color: white;
+    padding: 10px;
+    width: 30%;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+button:active{
+    background-color: chocolate;
+}
