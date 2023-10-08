@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costo de Energía eléctrica</title>
+</head>
+<body>
+    <form action="">
+        <h2>Calculadora de Costo de Energía eléctrica</h2>
+        <div class="tipo-usuario">
+            <h3>Tipo de usuario:</h3>
+            <label for="industrial">Industrial</label>
+            <input type="radio" name="opcion-usuario" id="industrial">
+            <label for="residencial">Residencial</label>
+            <input type="radio" name="opcion-usuario" id="residencial">
+        </div>
+        <div class="zona-domicilio">
+            <h3>Zona del domicilio</h3>
+            <select name="distrito" id="distritos">
+                <option value="centro">Distrito Centro</option>
+                <option value="sur">Distrito Sur</option>
+                <option value="oeste">Distrito Oeste</option>
+                <option value="norte">Distrito Norte</option>
+            </select>
+        </div>
+        <div class="cantidad-kwh">
+            <h3>Cantidad de kWh del mes</h3>
+            <input type="number" name="cantidadKWH" id="cantidadKwh">
+        </div>
+        <div class="result">
+            <button type="button" onclick="calcularCosto()">Calcular</button>
+            <p id="resultado"></p>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
