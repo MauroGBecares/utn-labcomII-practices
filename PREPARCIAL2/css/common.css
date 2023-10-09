@@ -1,0 +1,57 @@
+* {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+header{
+    background-color: #F7EDE2;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #37ADA8;
+    text-transform: uppercase;
+    height: 100px;  
+    margin-right: 20px;
+}
+
+.titulo h2{
+    width: 50px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li:hover{
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+li{
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.content{
+    background-color: #FBF6F0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-bottom: auto;
+}
+footer h2{
+    padding: 25px;
+}

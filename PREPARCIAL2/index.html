@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Cotizaciones de Cambio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body onload="cargarDivisas()">
+    <header>
+        <div class="titulo">
+            <img src="https://images.vexels.com/media/users/3/263270/isolated/preview/a5d312628107b359d71d8fe2de1973ae-icono-de-billetes-y-monedas-de-negocios-de-dinero.png"
+                alt="logo-billete" height="80px">
+            <h2>Cotización</h2>
+        </div>
+        <ul>
+            <li><a href="#">Cotizar</a></li>
+            <li><a href="divisa.html">Agregar Divisa</a></li>
+        </ul>
+    </header>
+    <section class="content">
+        <form action="">
+            <div class="formulario">
+                <h2>Cotizar</h2>
+                <input type="text" name="cantidad" id="txt-cantidad">
+                <select name="moneda" id="select-moneda">
+                    <option value="" selected disabled>Seleccione una opcion...</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select>
+                <button type="button" onclick="calcularDivisa()">Calcular</button>
+                <h3 id="resultado"></h3>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <h2>Desarrolado por Mauro Bécares</h2>
+    </footer>
+</body>
+
+</html>

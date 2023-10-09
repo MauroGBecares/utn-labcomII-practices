@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Cotizaciones de Cambio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/divisa.css">
+    <script src="scripts/divisa.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <img src="https://images.vexels.com/media/users/3/263270/isolated/preview/a5d312628107b359d71d8fe2de1973ae-icono-de-billetes-y-monedas-de-negocios-de-dinero.png"
+                alt="logo-billete" height="80px">
+            <h2>Cotización</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Cotizar</a></li>
+            <li><a href="#">Agregar Divisa</a></li>
+        </ul>
+    </header>
+    <section class="content">
+        <form action="">
+            <div class="formulario">
+                <h2>Agregar Moneda</h2>
+                <label for="nombre-moneda">Nombre de la moneda:</label>
+                <input type="text" name="moneda" id="nombre-moneda">
+                <label for="costo-conversion">Costo de la conversión:</label>
+                <input type="text" name="conversion" id="costo-conversion">
+                <button type="button" onclick="agregarMoneda()">Agregar</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <h2>Desarrolado por Mauro Bécares</h2>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.formulario h2{ 
+    display: contents;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}

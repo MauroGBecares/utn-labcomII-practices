@@ -13,6 +13,10 @@ function calcularCosto(){
     let cantidadKwh = document.getElementById('cantidadKwh').value
     let iva = 0
 
+    if(!(validar(tipoUsuario, distrito, cantidadKwh))){
+        return
+    }
+
     if (tipoUsuario[0].checked){
         iva = ivaIndustrial
     }
@@ -34,4 +38,20 @@ function calcularCosto(){
             resultado.innerHTML = `El resultado es ${costoServicio + cantidadKwh * distritoEste * (1 + iva)}`     
             break;
     }
+}
+
+function validar(tipoUsuario, distrito, cantidadKwh) {
+    if (!(tipoUsuario[0].checked || tipoUsuario[1].checked)){
+        alert("Debe seleccionar el tipo de Usuario")
+        return false
+    }
+    if (distrito == ""){
+        alert("Debe seleccionar el distrito")
+        return false
+    }
+    if (cantidadKwh <= 0){
+        alert("La cantidad de KWH debe ser mayor que 0")
+        return false
+    }
+    return true
 }
